@@ -1,0 +1,17 @@
+<!-- products.html -->
+{% extends 'home.html' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+    <h2>Product List</h2>
+    <p>Here are the products we offer:</p>
+    <!-- Display your products here -->
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the main page of the website.</p>
+    <ul>
+        <li><a href="{% url 'products' %}">Go to Products</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+{% endblock %}

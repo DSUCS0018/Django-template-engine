@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/about/">About Us</a></li> <!-- New link added -->
+                <li><a href="/contact/">Contact Us</a></li> <!-- New link added -->
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        {% block content %}
+        <!-- Content will be injected here -->
+        <h2>Home Page</h2>
+        <p>Welcome to the home page of our website. Explore our products and learn more about us!</p>
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
